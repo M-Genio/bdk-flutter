@@ -49,7 +49,7 @@ impl From<bdk::bitcoin::TxOut> for TxOut {
             value: x.value,
             address: bdk::bitcoin::util::address::Address::from_script(
                 &x.script_pubkey,
-                bdk::bitcoin::Network::Testnet,
+                bdk::bitcoin::Network::Bitcoin,
             )
             .unwrap()
             .to_string(),

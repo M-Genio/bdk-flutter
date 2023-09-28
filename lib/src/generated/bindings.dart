@@ -1849,9 +1849,9 @@ class RustWire implements FlutterRustBridgeWireBase {
   }
 
   late final _wire_combine_psbtPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(
-              ffi.Int64, ffi.Pointer<wire_uint_8_list>, ffi.Pointer<wire_uint_8_list>)>>('wire_combine_psbt');
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Int64, ffi.Pointer<wire_uint_8_list>, ffi.Pointer<wire_uint_8_list>)>>(
+      'wire_combine_psbt');
   late final _wire_combine_psbt = _wire_combine_psbtPtr
       .asFunction<void Function(int, ffi.Pointer<wire_uint_8_list>, ffi.Pointer<wire_uint_8_list>)>();
 
@@ -2180,9 +2180,9 @@ class RustWire implements FlutterRustBridgeWireBase {
   }
 
   late final _wire_descriptor_secret_extendPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(ffi.Int64, ffi.Pointer<wire_uint_8_list>,
-              ffi.Pointer<wire_uint_8_list>)>>('wire_descriptor_secret_extend');
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Int64, ffi.Pointer<wire_uint_8_list>, ffi.Pointer<wire_uint_8_list>)>>(
+      'wire_descriptor_secret_extend');
   late final _wire_descriptor_secret_extend = _wire_descriptor_secret_extendPtr
       .asFunction<void Function(int, ffi.Pointer<wire_uint_8_list>, ffi.Pointer<wire_uint_8_list>)>();
 
@@ -2199,9 +2199,9 @@ class RustWire implements FlutterRustBridgeWireBase {
   }
 
   late final _wire_descriptor_secret_derivePtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(ffi.Int64, ffi.Pointer<wire_uint_8_list>,
-              ffi.Pointer<wire_uint_8_list>)>>('wire_descriptor_secret_derive');
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Int64, ffi.Pointer<wire_uint_8_list>, ffi.Pointer<wire_uint_8_list>)>>(
+      'wire_descriptor_secret_derive');
   late final _wire_descriptor_secret_derive = _wire_descriptor_secret_derivePtr
       .asFunction<void Function(int, ffi.Pointer<wire_uint_8_list>, ffi.Pointer<wire_uint_8_list>)>();
 
@@ -2218,9 +2218,9 @@ class RustWire implements FlutterRustBridgeWireBase {
   }
 
   late final _wire_descriptor_secret_as_secret_bytesPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(ffi.Int64, ffi.Pointer<wire_uint_8_list>,
-              ffi.Pointer<wire_uint_8_list>)>>('wire_descriptor_secret_as_secret_bytes');
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Int64, ffi.Pointer<wire_uint_8_list>, ffi.Pointer<wire_uint_8_list>)>>(
+      'wire_descriptor_secret_as_secret_bytes');
   late final _wire_descriptor_secret_as_secret_bytes = _wire_descriptor_secret_as_secret_bytesPtr
       .asFunction<void Function(int, ffi.Pointer<wire_uint_8_list>, ffi.Pointer<wire_uint_8_list>)>();
 
@@ -2237,9 +2237,9 @@ class RustWire implements FlutterRustBridgeWireBase {
   }
 
   late final _wire_descriptor_secret_as_publicPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(ffi.Int64, ffi.Pointer<wire_uint_8_list>,
-              ffi.Pointer<wire_uint_8_list>)>>('wire_descriptor_secret_as_public');
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Int64, ffi.Pointer<wire_uint_8_list>, ffi.Pointer<wire_uint_8_list>)>>(
+      'wire_descriptor_secret_as_public');
   late final _wire_descriptor_secret_as_public = _wire_descriptor_secret_as_publicPtr
       .asFunction<void Function(int, ffi.Pointer<wire_uint_8_list>, ffi.Pointer<wire_uint_8_list>)>();
 
@@ -2475,8 +2475,9 @@ class RustWire implements FlutterRustBridgeWireBase {
   }
 
   late final _wire_signPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(ffi.Int64, wire_WalletInstance, ffi.Pointer<wire_uint_8_list>, ffi.Bool)>>('wire_sign');
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Int64, wire_WalletInstance, ffi.Pointer<wire_uint_8_list>, ffi.Bool)>>(
+      'wire_sign');
   late final _wire_sign =
       _wire_signPtr.asFunction<void Function(int, wire_WalletInstance, ffi.Pointer<wire_uint_8_list>, bool)>();
 
