@@ -47,13 +47,12 @@ impl From<bdk::bitcoin::TxOut> for TxOut {
     fn from(x: bdk::bitcoin::TxOut) -> Self {
         TxOut {
             value: x.value,
-            // address: bdk::bitcoin::util::address::Address::from_script(
-            //     &x.script_pubkey,
-            //     bdk::bitcoin::Network::Bitcoin,
-            // )
-            // .unwrap()
-            // .to_string(),
-            address: x.script_pubkey.to_string(),
+            address: bdk::bitcoin::util::address::Address::from_script(
+                &x.script_pubkey,
+                bdk::bitcoin::Network::Bitcoin,
+            )
+            .unwrap()
+            .to_string(),
         }
     }
 }
